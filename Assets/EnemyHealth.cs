@@ -29,8 +29,9 @@ public class EnemyHealth : MonoBehaviour
         SetCurrentHealth(currentHealth);
         if(currentHealth  <=0)
         {
-            Debug.Log("Die ");
+            Destroy(this.gameObject ,.5f);
         }
     }
 
+    
 }
